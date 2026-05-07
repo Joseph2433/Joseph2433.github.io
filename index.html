@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Joseph's Blog
-description: 个人技术博客 — 记录学习与成长
+description: 个人博客
 ---
 
 <!-- Hero Section -->
@@ -12,11 +12,11 @@ description: 个人技术博客 — 记录学习与成长
       <p class="greeting animate-fade-in-up">👋 你好，我是</p>
       <h1 class="animate-fade-in-up delay-1">
         <span class="highlight">Joseph</span><br>
-        热爱技术的探索者
+        一个想做点东西的萌新
       </h1>
       <p class="subtitle animate-fade-in-up delay-2">
-        复旦大学在读 · 热爱编程与技术写作<br>
-        在这里记录我的学习历程、技术笔记与思考
+        FDU_24_CS_undergraduate<br>
+        在这里生产一些废料
       </p>
       <div class="hero__actions animate-fade-in-up delay-3">
         <a href="{{ '/blog' | relative_url }}" class="btn btn--primary">📝 阅读博客</a>
@@ -26,7 +26,8 @@ description: 个人技术博客 — 记录学习与成长
     <div class="hero__avatar animate-fade-in delay-2">
       <div class="avatar-wrapper">
         <div class="avatar-ring"></div>
-        <img src="{{ '/assets/images/avatar.svg' | relative_url }}" alt="Joseph" class="avatar-img" onerror="this.style.background='linear-gradient(135deg, #667eea, #764ba2)'; this.style.display='flex';">
+        <img src="{{ '/assets/images/avatar.svg' | relative_url }}" alt="Joseph" class="avatar-img"
+          onerror="this.style.background='linear-gradient(135deg, #667eea, #764ba2)'; this.style.display='flex';">
       </div>
     </div>
   </div>
@@ -44,15 +45,12 @@ description: 个人技术博客 — 记录学习与成长
       <span class="skills__item">Java</span>
       <span class="skills__item">Python</span>
       <span class="skills__item">C/C++</span>
-      <span class="skills__item">JavaScript</span>
-      <span class="skills__item">HTML/CSS</span>
       <span class="skills__item">SQL</span>
       <span class="skills__item">Git</span>
       <span class="skills__item">Linux</span>
-      <span class="skills__item">数据结构</span>
+      <span class="skills__item">深度学习</span>
       <span class="skills__item">数据库</span>
       <span class="skills__item">算法</span>
-      <span class="skills__item">机器学习</span>
     </div>
   </div>
 </section>
@@ -62,8 +60,8 @@ description: 个人技术博客 — 记录学习与成长
   <div class="container">
     <div class="section__header">
       <p class="section-label">博客</p>
-      <h2>最新文章</h2>
-      <p>技术探索与学习笔记</p>
+      <h2>最新废料</h2>
+      <p>笔记</p>
     </div>
     <div class="posts-grid">
       {% for post in site.posts limit:3 %}

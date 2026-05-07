@@ -1,14 +1,14 @@
 ---
 layout: default
 title: 博客 - Joseph's Blog
-description: 技术文章与学习笔记
+description: 笔记
 permalink: /blog/
 ---
 
 <div class="page-header">
   <div class="container">
     <h1>📝 博客</h1>
-    <p>技术探索、学习笔记与个人思考</p>
+    <p>学习记录与个人思考</p>
   </div>
 </div>
 
@@ -16,7 +16,7 @@ permalink: /blog/
   <div class="container">
     <!-- Search -->
     <div style="max-width: 480px; margin: 0 auto 3rem;">
-      <input type="text" id="search-input" placeholder="🔍 搜索文章..." 
+      <input type="text" id="search-input" placeholder="🔍 搜索文章..."
         style="width: 100%; padding: 0.75rem 1.25rem; border: 1.5px solid #e2e8f0; border-radius: 9999px; font-size: 0.95rem; font-family: inherit; background: #fff; transition: all 0.3s ease; outline: none;"
         onfocus="this.style.borderColor='#667eea'; this.style.boxShadow='0 0 0 3px rgba(102,126,234,0.1)'"
         onblur="this.style.borderColor='#e2e8f0'; this.style.boxShadow='none'">
@@ -25,7 +25,8 @@ permalink: /blog/
     <!-- Posts List -->
     <div class="posts-grid" id="posts-list">
       {% for post in site.posts %}
-      <div class="post-card" data-title="{{ post.title | downcase }}" data-tags="{{ post.tags | join: ' ' | downcase }}">
+      <div class="post-card" data-title="{{ post.title | downcase }}"
+        data-tags="{{ post.tags | join: ' ' | downcase }}">
         <div class="post-card__body">
           <div class="post-card__meta">
             <time>{{ post.date | date: "%Y-%m-%d" }}</time>
