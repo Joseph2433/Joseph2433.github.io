@@ -15,3 +15,7 @@ desktop.ini
 .vscode/
 *.swp
 *.swo
+
+# Local Documentation
+使用说明.md
+
