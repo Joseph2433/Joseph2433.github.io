@@ -19,3 +19,10 @@ desktop.ini
 # Local Documentation
 使用说明.md
 
+
+# Local preview script
+_render_preview.py
+
+# gemini
+
+.agents/
