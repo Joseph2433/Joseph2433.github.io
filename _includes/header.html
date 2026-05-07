@@ -1,0 +1,18 @@
+<nav class="nav" id="navbar">
+  <div class="nav__inner">
+    <a href="{{ '/' | relative_url }}" class="nav__logo">Joseph's Blog</a>
+    
+    <ul class="nav__links" id="nav-links">
+      <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>首页</a></li>
+      <li><a href="{{ '/blog' | relative_url }}" {% if page.url contains '/blog' %}class="active"{% endif %}>博客</a></li>
+      <li><a href="{{ '/about' | relative_url }}" {% if page.url == '/about' or page.url == '/about/' %}class="active"{% endif %}>关于</a></li>
+      <li><a href="https://github.com/Joseph2433" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+    
+    <div class="nav__toggle" id="nav-toggle" onclick="toggleNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>

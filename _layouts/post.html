@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post__header">
+    <div class="post__meta">
+      <time>{{ page.date | date: "%Y年%m月%d日" }}</time>
+      {% if page.author %}<span>· {{ page.author }}</span>{% endif %}
+    </div>
+    <h1>{{ page.title }}</h1>
+    {% if page.tags %}
+    <div class="post__tags">
+      {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </header>
+  
+  <div class="post__content">
+    {{ content }}
+  </div>
+  
+  <nav class="post__nav">
+    {% if page.previous %}
+    <a href="{{ page.previous.url | relative_url }}" class="prev">
+      <span class="label">← 上一篇</span>
+      <span class="title">{{ page.previous.title }}</span>
+    </a>
+    {% endif %}
+    {% if page.next %}
+    <a href="{{ page.next.url | relative_url }}" class="next">
+      <span class="label">下一篇 →</span>
+      <span class="title">{{ page.next.title }}</span>
+    </a>
+    {% endif %}
+  </nav>
+</article>
